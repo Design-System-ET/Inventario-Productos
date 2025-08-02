@@ -223,6 +223,9 @@ public class View_Products_GUI extends javax.swing.JPanel {
             v_name.setText("");
             v_descrip.setText("");
             v_stock.setText("");
+            
+            //actualizo la tabla de forma dinamica
+            logica.read_product(jTable1);
         }else{
                 JOptionPane.showMessageDialog(null, "Error - no se pudo ingresar el registro");
         }
