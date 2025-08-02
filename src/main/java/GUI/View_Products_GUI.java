@@ -1,12 +1,19 @@
 package GUI;
 
 import Controllers.Logica;
+import DAO.Products_Request_DAO;
 import javax.swing.JOptionPane;
 
 public class View_Products_GUI extends javax.swing.JPanel {
 
-    //instacia de logica
-    Logica logica = new Logica();
+    /*instacia usando interfas como referencia pero se crea un objeto de la clase logica
+    - solo se pueden usar los metodos definidos en la interfas
+    - ideal para inyeccion de dependencias, pruebas unitarias y bajo acoplamiento
+    
+    - NO PUEDES USAR LOS METODOS PUBLICOS PRESENTES EN LA CLASE, SOLO LOS DE LA INTERFACE
+ 
+    */
+    Products_Request_DAO logica = new Logica();
     
     public View_Products_GUI() {
         initComponents();

@@ -155,5 +155,9 @@ public class Logica implements Products_Request_DAO{
         }
     }
     
+    public void prueba(){
+        System.out.println("Hola mundo");
+    }
+    
 }
  

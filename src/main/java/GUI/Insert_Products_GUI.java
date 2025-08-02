@@ -5,7 +5,12 @@ import javax.swing.JOptionPane;
 
 public class Insert_Products_GUI extends javax.swing.JPanel {
 
-    //instacia de logica
+    /*instacia usando una clase concreta como referencia (aunque estaa implementa una interface)
+      y crea un objeto de la clase logica
+    - puedes usar todos los metodos, los presentes en la interface asi como los 
+    definidos como publicos en la clase.
+ 
+    */
     Logica logica = new Logica();
     
     
